@@ -5,7 +5,13 @@ Setup hubot from https://slack.com/services/new/hubot and assign the API token t
 
 ```
 docker pull saumilp/slackbot
-docker run -e HUBOT_SLACK_TOKEN=xoxb-1234567890-XXXXXXXXXXXXXXXXXXXXXXXX -d saumilp/slackbot
+docker run -e HUBOT_SLACK_TOKEN=xoxb-137727454998-ioDQwyOnuuD7ps2OU5Lb -d saumilp/slackbot
+```
+Alternatively:
+```
+git clone git@github.com:SaumilP/slackbot.git
+sudo docker build -t --tag slackbot .
+docker run -e HUBOT_SLACK_TOKEN=xoxb-137727454998-ioDQwyOnuuD7ps2OU5Lb slackbot
 ```
 
 # Hubot Scripts
